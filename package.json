@@ -4,22 +4,12 @@
   "description": "None",
   "main": "./dist/fetch.umd.js",
   "module": "./fetch.js",
-  "directories": {
-    "test": "test"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Telefonica/stv-fetch.git"
+    "url": "git+https://github.com/RedParabola/stv-fetch.git"
   },
-  "keywords": [
-    "fetch"
-  ],
   "author": "Telefonica",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Telefonica/stv-fetch/issues"
-  },
-  "homepage": "https://github.com/Telefonica/stv-fetch#readme",
   "devDependencies": {
     "abortcontroller-polyfill": "^1.1.9",
     "chai": "^4.1.2",
@@ -38,11 +28,5 @@
     "promise-polyfill": "6.0.2",
     "rollup": "^0.59.1",
     "url-search-params": "0.6.1"
-  },
-  "scripts": {
-    "karma": "karma start ./test/karma.config.js --no-single-run --auto-watch",
-    "prepare": "make dist/fetch.umd.js dist/fetch.umd.js.flow",
-    "pretest": "make",
-    "test": "karma start ./test/karma.config.js && karma start ./test/karma-worker.config.js"
   }
 }
